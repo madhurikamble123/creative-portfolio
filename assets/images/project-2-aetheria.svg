@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aethBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120c1f"/>
+      <stop offset="60%" stop-color="#0b0814"/>
+      <stop offset="100%" stop-color="#050308"/>
+    </linearGradient>
+    <linearGradient id="bottleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b1d5c"/>
+      <stop offset="35%" stop-color="#9333ea"/>
+      <stop offset="55%" stop-color="#d8b4fe"/>
+      <stop offset="70%" stop-color="#7e22ce"/>
+      <stop offset="100%" stop-color="#240f3b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <filter id="glassBlur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#aethBg)"/>
+
+  <!-- Pedestal Studio Platform -->
+  <ellipse cx="400" cy="420" rx="260" ry="40" fill="#18112c" stroke="#a855f7" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="400" cy="420" rx="160" ry="24" fill="#241842" stroke="#d8b4fe" stroke-width="1" opacity="0.8"/>
+  <ellipse cx="400" cy="420" rx="80" ry="12" fill="#3b206e" opacity="0.9"/>
+
+  <!-- Back Glow Ambient -->
+  <circle cx="400" cy="240" r="140" fill="#9333ea" opacity="0.22" filter="url(#glassBlur)"/>
+
+  <!-- Luxury Perfume / Cosmetic Bottle 3D Render -->
+  <!-- Bottle Cap -->
+  <rect x="365" y="110" width="70" height="40" rx="4" fill="url(#goldGrad)"/>
+  <rect x="380" y="150" width="40" height="15" fill="#a855f7"/>
+
+  <!-- Glass Bottle Body - Geometric Prism Facets -->
+  <polygon points="340,165 460,165 480,380 320,380" fill="url(#bottleGrad)" stroke="#c084fc" stroke-width="2"/>
+  
+  <!-- Facet Reflection Planes -->
+  <polygon points="340,165 400,165 385,380 320,380" fill="#ffffff" opacity="0.12"/>
+  <polygon points="400,165 425,165 420,380 385,380" fill="#ffffff" opacity="0.25"/>
+  <polygon points="425,165 460,165 480,380 420,380" fill="#2e1065" opacity="0.4"/>
+
+  <!-- Bottle Label Minimalist Typography -->
+  <rect x="350" y="240" width="100" height="70" rx="2" fill="#0d091a" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.9"/>
+  <text x="400" y="265" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', serif" font-size="12" font-weight="bold" letter-spacing="3">AETHERIA</text>
+  <text x="400" y="280" text-anchor="middle" fill="#eab308" font-family="sans-serif" font-size="8" letter-spacing="2">EAU DE PARFUM</text>
+  <line x1="375" y1="292" x2="425" y2="292" stroke="#a855f7" stroke-width="1"/>
+  <text x="400" y="302" text-anchor="middle" fill="#a1a1aa" font-family="monospace" font-size="6">50 ML • 1.7 FL OZ</text>
+
+  <!-- Floating Crystal Spheres / Caustics -->
+  <circle cx="270" cy="220" r="24" fill="none" stroke="#d8b4fe" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="270" cy="220" r="20" fill="url(#bottleGrad)" opacity="0.4"/>
+  <circle cx="530" cy="270" r="32" fill="none" stroke="#d8b4fe" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="530" cy="270" r="28" fill="url(#bottleGrad)" opacity="0.3"/>
+
+  <!-- Info Overlay -->
+  <g transform="translate(60, 60)" opacity="0.85">
+    <rect x="0" y="0" width="140" height="28" rx="6" fill="#16102a" stroke="#d8b4fe" stroke-width="1.2"/>
+    <text x="12" y="18" fill="#e9d5ff" font-family="monospace" font-size="11" font-weight="bold">● BRAND &amp; PACKAGING</text>
+  </g>
+  <text x="50" y="445" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">AETHERIA VISUAL SYSTEM</text>
+  <text x="50" y="470" fill="#a1a1aa" font-family="'Segoe UI', Roboto, sans-serif" font-size="14">3D Product Rendering, CMF &amp; Luxury Branding</text>
+</svg>

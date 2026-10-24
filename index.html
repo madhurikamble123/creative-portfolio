@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ranjeet Sardar - Senior Graphic Designer & 3D Animator Portfolio. Specializing in character rigging, kinetic motion graphics, brand identity, and real-time CGI.">
+  <meta name="keywords" content="Graphic Designer, 3D Animator, Motion Designer, 3D Modeling, Blender, Maya, Unreal Engine, Cinema 4D, Portfolio">
+  <meta name="author" content="Ranjeet Sardar">
+  <title>Ranjeet Sardar | Graphic Designer &amp; 3D Animator Portfolio</title>
+
+  <!-- Google Fonts (Syne for headings, Plus Jakarta Sans for body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+  <!-- =======================================================================
+       1. RESPONSIVE NAVBAR
+       ======================================================================= -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="#home">
+        <div class="brand-icon-box">
+          <i class="bi bi-box"></i>
+        </div>
+        <div>
+          <span>Ranjeet Sardar</span>
+          <span class="brand-sub">3D &bull; MOTION &bull; DESIGN</span>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-3"></i>
+      </button>
+
+      <!-- Nav Links & CTA -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a href="#contact" class="btn-primary-purple btn-sm-pill">
+              <i class="bi bi-send-fill"></i> Hire Me
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =======================================================================
+       2. HOME / HERO SECTION
+       ======================================================================= -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Hero Left Column: Intro & Actions -->
+        <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+          <!-- Availability Status Badge -->
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Full-Time &amp; Freelance Contracts</span>
+          </div>
+
+          <h1 class="hero-title">
+            Crafting <span class="text-gradient">Dimensional Worlds</span> &amp; Kinetic Motion.
+          </h1>
+
+          <p class="hero-description">
+              Hi, I’m <strong>Ranjeet Sardar</strong> — a UI/UX Designer & Motion Graphics Creator, and Crafting Seamless User Experiences & Engaging Animations.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#projects" class="btn-primary-purple">
+              <i class="bi bi-grid-fill"></i> Explore Projects
+            </a>
+            <button type="button" class="btn-outline-purple" data-bs-toggle="modal" data-bs-target="#showreelModal">
+              <i class="bi bi-play-circle-fill text-purple"></i> Watch 2026 Showreel
+            </button>
+          </div>
+
+          <!-- Quick Tech Stack Tags -->
+          <div class="d-flex flex-wrap align-items-center gap-2 pt-2">
+            <span class="text-dim small text-uppercase font-monospace fw-semibold me-2">Primary Arsenal:</span>
+            <span class="tool-badge-item"><i class="bi bi-boxes text-purple"></i> Blender</span>
+            <span class="tool-badge-item"><i class="bi bi-cpu text-cyan"></i> Maya</span>
+            <span class="tool-badge-item"><i class="bi bi-lightning-charge text-pink"></i> Unreal Engine 5</span>
+            <span class="tool-badge-item"><i class="bi bi-palette text-purple"></i> After Effects</span>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Interactive 3D Canvas Visual -->
+        <div class="col-lg-6 col-12">
+          <div class="hero-visual-wrapper">
+            <!-- Three.js Canvas Element -->
+            <canvas id="hero-3d-canvas"></canvas>
+
+            <!-- Floating Orbital Badge 1 -->
+            <div class="hero-orbit-pill pill-1">
+              <div class="brand-icon-box" style="width: 28px; height: 28px; font-size: 0.85rem;">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <div>
+                <span class="d-block text-white">60 FPS Render</span>
+                <span class="text-dim small font-monospace">Fluid Keyframing</span>
+              </div>
+            </div>
+
+            <!-- Floating Orbital Badge 2 -->
+            <div class="hero-orbit-pill pill-2">
+              <div class="brand-icon-box" style="width: 28px; height: 28px; font-size: 0.85rem; background: linear-gradient(135deg, #06b6d4, #8b5cf6);">
+                <i class="bi bi-patch-check-fill"></i>
+              </div>
+              <div>
+                <span class="d-block text-white">Autodesk Certified</span>
+                <span class="text-dim small font-monospace">Maya &amp; 3ds Max</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Stats Bar -->
+      <div class="hero-stats-bar">
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-target="5" data-suffix="+">5+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-target="120" data-suffix="+">120+</div>
+              <div class="stat-label">Completed Projects</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-target="24" data-suffix="+">24+</div>
+              <div class="stat-label">Awards &amp; Features</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       3. ABOUT SECTION
+       ======================================================================= -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="text-center mb-5">
+        <span class="section-badge">// WHO I AM</span>
+        <h2 class="section-title">Bridging Graphic Art &amp; 3D Reality</h2>
+        <p class="section-subtitle">
+          From concept sketches to high-poly modeling, rigging, and cinematic post-production.
+        </p>
+      </div>
+
+      <div class="row align-items-center g-5">
+        <!-- Portrait & Experience Badge -->
+        <div class="col-lg-5 col-12">
+          <div class="about-card-wrapper">
+            <img src="assets/images/avatar.svg" alt="Ranjeet Sardar 3D Designer Portrait" class="about-image">
+            <div class="about-floating-exp">
+              <div class="about-exp-years">5+</div>
+              <div class="about-exp-text">
+                Years of<br>Industry Excellence
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio & 4 Core Pillars -->
+        <div class="col-lg-7 col-12">
+          <h3 class="mb-3 text-gradient-purple">Designing for the next dimension of visual experiences.</h3>
+          <p class="text-secondary mb-4">
+            I’m a multidisciplinary designer with a strong foundation in visual identity and motion mechanics. Over the past 5+ years, I’ve collaborated with cutting-edge tech startups, AAA gaming studios, and global creative agencies to deliver high-impact 3D animation, photorealistic product renders, and kinetic brand systems.
+          </p>
+
+          <!-- 4 Pillars Grid -->
+          <div class="row g-3 mb-4">
+            <div class="col-md-6 col-12">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="bi bi-unity"></i>
+                </div>
+                <h4 class="pillar-title">3D Modeling &amp; Rigging</h4>
+                <p class="pillar-desc">
+                  Anatomical character rigs, clean quad topology, and complex hard-surface vehicle mechanical joints.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="bi bi-camera-reels-fill"></i>
+                </div>
+                <h4 class="pillar-title">Cinematic Motion VFX</h4>
+                <p class="pillar-desc">
+                  Kinetic typography, fluid simulation, procedural particles, and seamless multi-pass compositing.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="bi bi-gem"></i>
+                </div>
+                <h4 class="pillar-title">Brand &amp; CMF Packaging</h4>
+                <p class="pillar-desc">
+                  Hyper-realistic product visuals, caustics, foil stamp detailing, and comprehensive brand guidelines.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="bi bi-gpu-card"></i>
+                </div>
+                <h4 class="pillar-title">Real-time CGI &amp; XR</h4>
+                <p class="pillar-desc">
+                  Unreal Engine 5 Lumen &amp; Nanite optimization, virtual production backdrops, and interactive asset creation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#resume" class="btn-primary-purple btn-sm-pill">
+              <i class="bi bi-file-earmark-person"></i> View Experience Timeline
+            </a>
+            <a href="#contact" class="btn-outline-purple btn-sm-pill">
+              <i class="bi bi-chat-dots"></i> Let's Discuss Your Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       4. SKILLS SECTION
+       ======================================================================= -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">// TECHNICAL MASTERY</span>
+        <h2 class="section-title">Core Skills &amp; Software Proficiency</h2>
+        <p class="section-subtitle">
+          Balanced mastery across both technical 3D pipelines and artistic graphic design principles.
+        </p>
+      </div>
+
+      <!-- Skill Categories Multi-Column Grid -->
+      <div class="row g-4 mb-5">
+        <!-- Category 1: 3D Art & Animation -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="skill-category-box">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i class="bi bi-layers-half"></i>
+              </div>
+              <h3 class="h5 m-0 text-white">3D Art &amp; Animation</h3>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Character Rigging &amp; Skinning</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Hard-Surface Modeling</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="92"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Keyframing &amp; Motion Timing</span>
+                <span class="skill-percent">96%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="96"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Lighting, Shaders &amp; Rendering</span>
+                <span class="skill-percent">94%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="94"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item mb-0">
+              <div class="skill-info">
+                <span>Fluid &amp; Particle Dynamics</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Graphic Design & Branding -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="skill-category-box">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.25), rgba(168, 85, 247, 0.15)); color: var(--accent-pink);">
+                <i class="bi bi-palette2"></i>
+              </div>
+              <h3 class="h5 m-0 text-white">Graphic &amp; Brand Design</h3>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Visual Identity Systems</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="95" style="background: linear-gradient(90deg, #ec4899, #a855f7);"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>3D Packaging &amp; CMF</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="90" style="background: linear-gradient(90deg, #ec4899, #a855f7);"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Typography &amp; Layout Grid</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="92" style="background: linear-gradient(90deg, #ec4899, #a855f7);"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Brand Style Guidelines</span>
+                <span class="skill-percent">94%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="94" style="background: linear-gradient(90deg, #ec4899, #a855f7);"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item mb-0">
+              <div class="skill-info">
+                <span>UI &amp; Motion Prototype Design</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="88" style="background: linear-gradient(90deg, #ec4899, #a855f7);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Motion & VFX Pipeline -->
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="skill-category-box">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.25), rgba(99, 102, 241, 0.15)); color: var(--accent-cyan);">
+                <i class="bi bi-film"></i>
+              </div>
+              <h3 class="h5 m-0 text-white">Motion &amp; VFX Pipeline</h3>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Compositing &amp; Camera Tracking</span>
+                <span class="skill-percent">93%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="93" style="background: linear-gradient(90deg, #38bdf8, #8b5cf6);"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>ACEScg Color Management</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="90" style="background: linear-gradient(90deg, #38bdf8, #8b5cf6);"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Unreal Engine 5 Real-Time VFX</span>
+                <span class="skill-percent">89%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="89" style="background: linear-gradient(90deg, #38bdf8, #8b5cf6);"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Post-Production Sound Synch</span>
+                <span class="skill-percent">87%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="87" style="background: linear-gradient(90deg, #38bdf8, #8b5cf6);"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item mb-0">
+              <div class="skill-info">
+                <span>Render Farm Optimization</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="95" style="background: linear-gradient(90deg, #38bdf8, #8b5cf6);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Software Proficiency Grid -->
+      <div class="skill-category-box">
+        <h4 class="h5 mb-4 text-white">Industry Software Proficiency</h4>
+        <div class="row g-3">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="software-chip">
+              <span class="software-name"><i class="bi bi-box-seam text-purple me-2"></i>Blender 4.2</span>
+              <span class="software-level">Master</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="software-chip">
+              <span class="software-name"><i class="bi bi-gear-wide-connected text-cyan me-2"></i>Autodesk Maya</span>
+              <span class="software-level">Advanced</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="software-chip">
+              <span class="software-name"><i class="bi bi-camera-video text-pink me-2"></i>Cinema 4D</span>
+              <span class="software-level">Advanced</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="software-chip">
+              <span class="software-name"><i class="bi bi-brush text-purple me-2"></i>ZBrush</span>
+              <span class="software-level">Expert</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="software-chip">
+              <span class="software-name"><i class="bi bi-lightning-charge text-cyan me-2"></i>Unreal Engine 5</span>
+              <span class="software-level">Proficient</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="software-chip">
+              <span class="software-name"><i class="bi bi-play-btn text-purple me-2"></i>After Effects</span>
+              <span class="software-level">Master</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="software-chip">
+              <span class="software-name"><i class="bi bi-vector-pen text-pink me-2"></i>Adobe Illustrator</span>
+              <span class="software-level">Master</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="software-chip">
+              <span class="software-name"><i class="bi bi-image text-cyan me-2"></i>Photoshop &amp; Figma</span>
+              <span class="software-level">Master</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       5. PROJECTS GALLERY SECTION (SEARCH & CATEGORY FILTER)
+       ======================================================================= -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">// PORTFOLIO ARCHIVE</span>
+        <h2 class="section-title">Selected Works &amp; 3D Animations</h2>
+        <p class="section-subtitle">
+          Interactive showcase featuring real-time search, category filtering, and high-definition video previews.
+        </p>
+      </div>
+
+      <!-- Search & Filter Controls Toolbar -->
+      <div class="filter-toolbar">
+        <div class="row g-3 align-items-center">
+          <!-- Live Search Input -->
+          <div class="col-lg-5 col-12">
+            <div class="search-box-wrapper">
+              <i class="bi bi-search search-icon"></i>
+              <input type="text" id="projectSearchInput" class="search-input" placeholder="Search by title, software (e.g. Maya, Octane), or keyword...">
+              <button type="button" id="clearSearchBtn" class="btn btn-sm text-dim position-absolute end-0 top-50 translate-middle-y me-2" style="display: none;" title="Clear Search">
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="col-lg-7 col-12">
+            <div class="category-filter-nav">
+              <button class="filter-btn active" data-filter="all">All Projects</button>
+              <button class="filter-btn" data-filter="3D Animation">3D Animation</button>
+              <button class="filter-btn" data-filter="Motion Graphics">Motion Graphics</button>
+              <button class="filter-btn" data-filter="Brand Identity">Brand Identity</button>
+              <button class="filter-btn" data-filter="Character & VFX">Character &amp; VFX</button>
+              <button class="filter-btn" data-filter="3D Environment">3D Environment</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Results Bar -->
+        <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top border-secondary border-opacity-25 small text-muted">
+          <span id="visibleProjectCount">Showing 8 of 8 projects</span>
+          <span class="d-none d-md-inline"><i class="bi bi-film text-purple me-1"></i> Click card preview to play animations in lightbox modal</span>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="row g-4" id="projectsContainer">
+
+        <!-- Card 1: Cyber Mecha Rig (Video Preview) -->
+        <div class="col-lg-4 col-md-6 col-12 project-item-col">
+          <div class="project-card" data-category="3D Animation" data-title="Cyber Mecha Rig & Combat Cycle" data-tags="Maya Blender Substance Octane Rigging Character">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-1-mecha.svg" alt="Cyber Mecha Rig">
+              <span class="project-media-badge"><i class="bi bi-camera-video-fill text-purple"></i> Video Preview</span>
+              <div class="video-play-overlay">
+                <button class="play-circle-btn" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-1" aria-label="Play video">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span>3D ANIMATION &bull; 60 FPS</span>
+                <span>2026</span>
+              </div>
+              <h3 class="project-title">Cyber Mecha Rig</h3>
+              <p class="project-desc">
+                Anatomical rigging and combat keyframe cycle for high-mobility sci-fi mech with hydraulic panel deformers.
+              </p>
+              <div class="project-tags">
+                <span class="tag-pill">Autodesk Maya</span>
+                <span class="tag-pill">Blender</span>
+                <span class="tag-pill">Octane</span>
+                <span class="tag-pill">IK/FK Rig</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn-card-action btn-card-preview" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-1">
+                  <i class="bi bi-play-circle"></i> Play Preview
+                </button>
+                <button class="btn-card-action btn-card-details" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-1">
+                  <i class="bi bi-file-text"></i> Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Aetheria Luxury Packaging (Image Preview) -->
+        <div class="col-lg-4 col-md-6 col-12 project-item-col">
+          <div class="project-card" data-category="Brand Identity" data-title="Aetheria Luxury Visual System & 3D Packaging" data-tags="Cinema 4D Redshift Packaging Branding Typography">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-2-aetheria.svg" alt="Aetheria 3D Packaging">
+              <span class="project-media-badge"><i class="bi bi-image-fill text-cyan"></i> 3D Render</span>
+              <div class="video-play-overlay">
+                <button class="play-circle-btn" style="background: rgba(56, 189, 248, 0.9);" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-2" aria-label="View 3D render">
+                  <i class="bi bi-zoom-in"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span>BRAND IDENTITY &bull; CMF</span>
+                <span>2025</span>
+              </div>
+              <h3 class="project-title">Aetheria Visual System</h3>
+              <p class="project-desc">
+                Prismatic glass perfume bottle development, caustics simulation, and luxury gold foil brand identity.
+              </p>
+              <div class="project-tags">
+                <span class="tag-pill">Cinema 4D</span>
+                <span class="tag-pill">Redshift</span>
+                <span class="tag-pill">Brand Identity</span>
+                <span class="tag-pill">Packaging</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn-card-action btn-card-preview" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-2">
+                  <i class="bi bi-eye"></i> View Still
+                </button>
+                <button class="btn-card-action btn-card-details" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-2">
+                  <i class="bi bi-file-text"></i> Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Solaris Chrono Kinetic Sequence (Video Preview) -->
+        <div class="col-lg-4 col-md-6 col-12 project-item-col">
+          <div class="project-card" data-category="Motion Graphics" data-title="Solaris Chrono Kinetic Title Sequence" data-tags="After Effects Cinema 4D Particles Kinetic Typography Motion VFX">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-3-kinetic.svg" alt="Solaris Kinetic Sequence">
+              <span class="project-media-badge"><i class="bi bi-camera-video-fill text-pink"></i> Video Preview</span>
+              <div class="video-play-overlay">
+                <button class="play-circle-btn" style="background: rgba(236, 72, 153, 0.9);" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-3" aria-label="Play video">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span>MOTION GRAPHICS &bull; VFX</span>
+                <span>2026</span>
+              </div>
+              <h3 class="project-title">Solaris Chrono Title</h3>
+              <p class="project-desc">
+                Kinetic 3D typography ribbons and cosmic particle vortex title sequence for a streaming sci-fi docuseries.
+              </p>
+              <div class="project-tags">
+                <span class="tag-pill">After Effects</span>
+                <span class="tag-pill">Trapcode</span>
+                <span class="tag-pill">Cinema 4D</span>
+                <span class="tag-pill">Typography</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn-card-action btn-card-preview" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-3">
+                  <i class="bi bi-play-circle"></i> Play Preview
+                </button>
+                <button class="btn-card-action btn-card-details" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-3">
+                  <i class="bi bi-file-text"></i> Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Hyperdrive XR Vehicle (Video Preview) -->
+        <div class="col-lg-4 col-md-6 col-12 project-item-col">
+          <div class="project-card" data-category="3D Animation" data-title="Hyperdrive XR Concept Hovercraft" data-tags="Unreal Engine UE5 Blender Lumen Hard Surface Vehicle Simulation">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-4-hyperdrive.svg" alt="Hyperdrive XR Concept">
+              <span class="project-media-badge"><i class="bi bi-camera-video-fill text-purple"></i> Video Preview</span>
+              <div class="video-play-overlay">
+                <button class="play-circle-btn" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-4" aria-label="Play video">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span>3D ANIMATION &bull; UNREAL 5</span>
+                <span>2025</span>
+              </div>
+              <h3 class="project-title">Hyperdrive XR Vehicle</h3>
+              <p class="project-desc">
+                Hard-surface concept hovercraft with interactive cockpit HUD and real-time raytraced flythrough in UE5.
+              </p>
+              <div class="project-tags">
+                <span class="tag-pill">Unreal Engine 5</span>
+                <span class="tag-pill">Blender</span>
+                <span class="tag-pill">Lumen RT</span>
+                <span class="tag-pill">Substance</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn-card-action btn-card-preview" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-4">
+                  <i class="bi bi-play-circle"></i> Play Preview
+                </button>
+                <button class="btn-card-action btn-card-details" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-4">
+                  <i class="bi bi-file-text"></i> Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Valkyrie Character Sculpt (Image Preview) -->
+        <div class="col-lg-4 col-md-6 col-12 project-item-col">
+          <div class="project-card" data-category="Character & VFX" data-title="Valkyrie Proto-Sculpt & Character Bust" data-tags="ZBrush Maya Character Sculpt High Poly Digital Clay">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-5-valkyrie.svg" alt="Valkyrie Sculpt">
+              <span class="project-media-badge"><i class="bi bi-image-fill text-cyan"></i> 3D Render</span>
+              <div class="video-play-overlay">
+                <button class="play-circle-btn" style="background: rgba(56, 189, 248, 0.9);" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-5" aria-label="View 3D render">
+                  <i class="bi bi-zoom-in"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span>CHARACTER SCULPT &bull; ZBRUSH</span>
+                <span>2025</span>
+              </div>
+              <h3 class="project-title">Valkyrie Proto-Sculpt</h3>
+              <p class="project-desc">
+                High-density 32M polygon digital clay bust with ornate gold filigree, micro-surface cloth weaves and PBR armor.
+              </p>
+              <div class="project-tags">
+                <span class="tag-pill">ZBrush</span>
+                <span class="tag-pill">Marmoset 4</span>
+                <span class="tag-pill">Retopology</span>
+                <span class="tag-pill">ACEScg</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn-card-action btn-card-preview" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-5">
+                  <i class="bi bi-eye"></i> View Still
+                </button>
+                <button class="btn-card-action btn-card-details" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-5">
+                  <i class="bi bi-file-text"></i> Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Neon Oasis 2099 (Image Preview) -->
+        <div class="col-lg-4 col-md-6 col-12 project-item-col">
+          <div class="project-card" data-category="3D Environment" data-title="Neon Oasis 2099 Cyberpunk Cityscape" data-tags="Blender Unreal Engine Environment Cyberpunk Lighting Volumetric">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-6-neonoasis.svg" alt="Neon Oasis City">
+              <span class="project-media-badge"><i class="bi bi-image-fill text-cyan"></i> 3D Render</span>
+              <div class="video-play-overlay">
+                <button class="play-circle-btn" style="background: rgba(56, 189, 248, 0.9);" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-6" aria-label="View 3D render">
+                  <i class="bi bi-zoom-in"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span>3D ENVIRONMENT &bull; BLENDER</span>
+                <span>2026</span>
+              </div>
+              <h3 class="project-title">Neon Oasis 2099</h3>
+              <p class="project-desc">
+                Futuristic isometric cityscape with volumetric fog, wet ground reflections, and modular architectural kitbashing.
+              </p>
+              <div class="project-tags">
+                <span class="tag-pill">Blender 4.2</span>
+                <span class="tag-pill">Unreal Engine</span>
+                <span class="tag-pill">Volumetric Fog</span>
+                <span class="tag-pill">Kitbash</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn-card-action btn-card-preview" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-6">
+                  <i class="bi bi-eye"></i> View Still
+                </button>
+                <button class="btn-card-action btn-card-details" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-6">
+                  <i class="bi bi-file-text"></i> Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7: Pulse Drink Commercial (Video Preview) -->
+        <div class="col-lg-4 col-md-6 col-12 project-item-col">
+          <div class="project-card" data-category="3D Animation" data-title="Pulse Energy Drink Dynamic 3D Commercial" data-tags="Houdini Cinema 4D Redshift Fluid Simulation Commercial Animation">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-7-pulse.svg" alt="Pulse Drink Commercial">
+              <span class="project-media-badge"><i class="bi bi-camera-video-fill text-purple"></i> Video Preview</span>
+              <div class="video-play-overlay">
+                <button class="play-circle-btn" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-7" aria-label="Play video">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span>3D COMMERCIAL &bull; FLUID FX</span>
+                <span>2026</span>
+              </div>
+              <h3 class="project-title">Pulse Drink 3D Spot</h3>
+              <p class="project-desc">
+                Zero-gravity fluid droplets, aluminum condensation macro shots, and high-energy product choreography.
+              </p>
+              <div class="project-tags">
+                <span class="tag-pill">Houdini FX</span>
+                <span class="tag-pill">Redshift</span>
+                <span class="tag-pill">FLIP Fluid</span>
+                <span class="tag-pill">Lighting</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn-card-action btn-card-preview" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-7">
+                  <i class="bi bi-play-circle"></i> Play Preview
+                </button>
+                <button class="btn-card-action btn-card-details" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-7">
+                  <i class="bi bi-file-text"></i> Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8: Prism Studio Identity (Image Preview) -->
+        <div class="col-lg-4 col-md-6 col-12 project-item-col">
+          <div class="project-card" data-category="Brand Identity" data-title="Prism Studio 3D Identity & Design System" data-tags="Illustrator Cinema 4D Typography Branding Design System">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-8-prism.svg" alt="Prism Studio Identity">
+              <span class="project-media-badge"><i class="bi bi-image-fill text-cyan"></i> Brand System</span>
+              <div class="video-play-overlay">
+                <button class="play-circle-btn" style="background: rgba(56, 189, 248, 0.9);" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-8" aria-label="View 3D render">
+                  <i class="bi bi-zoom-in"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span>BRAND IDENTITY &bull; DESIGN SYSTEM</span>
+                <span>2025</span>
+              </div>
+              <h3 class="project-title">Prism Studio System</h3>
+              <p class="project-desc">
+                Mathematical logo geometry, 3D embossed stationery mockups, and a 94-page international design guideline manual.
+              </p>
+              <div class="project-tags">
+                <span class="tag-pill">Adobe Illustrator</span>
+                <span class="tag-pill">Cinema 4D</span>
+                <span class="tag-pill">Typography</span>
+                <span class="tag-pill">Guidelines</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn-card-action btn-card-preview" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-8">
+                  <i class="bi bi-eye"></i> View Still
+                </button>
+                <button class="btn-card-action btn-card-details" data-bs-toggle="modal" data-bs-target="#projectDetailsModal" data-project-id="project-8">
+                  <i class="bi bi-file-text"></i> Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Empty State Banner (Shown when search/filter has 0 results) -->
+      <div id="projectsEmptyState" class="projects-empty-state">
+        <i class="bi bi-search text-purple fs-1 mb-3 d-block"></i>
+        <h4 class="text-white mb-2">No matching projects found</h4>
+        <p class="text-muted mb-4">We couldn't find any work matching your search query or active category filter.</p>
+        <button id="resetFiltersBtn" class="btn-outline-purple btn-sm-pill">
+          <i class="bi bi-arrow-counterclockwise"></i> Reset Filters
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       6. RESUME & TIMELINE SECTION
+       ======================================================================= -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">// CAREER TIMELINE</span>
+        <h2 class="section-title">Professional Experience &amp; Credentials</h2>
+        <p class="section-subtitle">
+          Demonstrated history delivering high-stakes 3D and graphic assets on schedule and within budget.
+        </p>
+      </div>
+
+      <!-- Prominent Download Resume Banner -->
+      <div class="resume-download-banner">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-4">
+          <div class="d-flex align-items-center gap-4">
+            <div class="pdf-icon-box">
+              <i class="bi bi-file-earmark-pdf-fill"></i>
+            </div>
+            <div>
+              <h3 class="h4 text-white mb-1">Madhuri_Kamble_CV2026.pdf</h3>
+              <p class="text-secondary small mb-0 font-monospace">
+                PDF Document &bull; 2.4 MB &bull; Updated October 2026 &bull; Verified ATS Compatible
+              </p>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="assets/docs/Madhuri_Kamble_CV2026.pdf" download="Madhuri_Kamble_CV2026.pdf" id="downloadResumeBtn" class="btn-primary-purple">
+              <i class="bi bi-download"></i> Download Resume
+            </a>
+            <a href="assets/docs/Madhuri_Kamble_CV2026.pdf" target="_blank" class="btn-outline-purple">
+              <i class="bi bi-box-arrow-up-right"></i> Open in New Tab
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Split Timeline Grid (Experience & Education) -->
+      <div class="row g-4">
+        <!-- Column 1: Work Experience -->
+        <div class="col-lg-6 col-12">
+          <div class="timeline-column-card">
+            <div class="timeline-card-header">
+              <i class="bi bi-briefcase-fill text-purple fs-4"></i>
+              <h3 class="text-white">Work Experience</h3>
+            </div>
+
+            <div class="timeline-stream">
+              <!-- Node 1 -->
+              <div class="timeline-node">
+                <span class="timeline-dot"></span>
+                <span class="timeline-period">2023 &mdash; Present</span>
+                <h4 class="timeline-role">Senior 3D Motion Designer</h4>
+                <div class="timeline-org">Nexus Creative Studios &bull; San Francisco / Remote</div>
+                <p class="timeline-desc">
+                  Leading a squad of 6 3D artists creating high-end broadcast commercials and CGI product experiences for global brands.
+                </p>
+                <ul class="timeline-bullets">
+                  <li>Engineered modular ACEScg Maya-to-Unreal real-time animation pipeline, reducing render overhead by 35%.</li>
+                  <li>Directed character rigging and procedural fluid simulations for 14 national commercial campaigns.</li>
+                  <li>Mentored junior animators on keyframe curve easing, topology flow, and Octane/Redshift shader networks.</li>
+                </ul>
+              </div>
+
+              <!-- Node 2 -->
+              <div class="timeline-node">
+                <span class="timeline-dot"></span>
+                <span class="timeline-period">2021 &mdash; 2023</span>
+                <h4 class="timeline-role">3D Generalist &amp; Animator</h4>
+                <div class="timeline-org">PolyForge Media &bull; Los Angeles, CA</div>
+                <p class="timeline-desc">
+                  Responsible for hard-surface modeling, vehicle rigging, and kinetic motion graphics for entertainment and tech clients.
+                </p>
+                <ul class="timeline-bullets">
+                  <li>Delivered broadcast-ready kinetic title sequences and 3D UI holograms for 4 episodic television series.</li>
+                  <li>Authored PBR texture packs in Substance Painter with strict physical reflectance compliance.</li>
+                </ul>
+              </div>
+
+              <!-- Node 3 -->
+              <div class="timeline-node">
+                <span class="timeline-dot"></span>
+                <span class="timeline-period">2019 &mdash; 2021</span>
+                <h4 class="timeline-role">Graphic &amp; Visual Designer</h4>
+                <div class="timeline-org">Hyperion Creative Agency &bull; New York, NY</div>
+                <p class="timeline-desc">
+                  Designed bespoke brand identities, 3D packaging concepts, and interactive marketing collateral.
+                </p>
+                <ul class="timeline-bullets">
+                  <li>Crafted brand guidelines, typography systems, and print packaging for 20+ consumer product lines.</li>
+                  <li>Introduced 3D product rendering into agency workflow, replacing expensive traditional photo shoots.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Education & Certifications -->
+        <div class="col-lg-6 col-12">
+          <div class="timeline-column-card">
+            <div class="timeline-card-header">
+              <i class="bi bi-mortarboard-fill text-cyan fs-4"></i>
+              <h3 class="text-white">Education &amp; Credentials</h3>
+            </div>
+
+            <div class="timeline-stream">
+              <!-- Node 1 -->
+              <div class="timeline-node">
+                <span class="timeline-dot" style="border-color: var(--accent-cyan); box-shadow: 0 0 10px var(--accent-cyan);"></span>
+                <span class="timeline-period">2015 &mdash; 2019</span>
+                <h4 class="timeline-role">Bachelor of Fine Arts (B.F.A.) in Digital Arts &amp; Animation</h4>
+                <div class="timeline-org">California Institute of the Arts (CalArts)</div>
+                <p class="timeline-desc">
+                  Rigorous focus on classical figure drawing, 3D computer animation, cinema lighting, storytelling, and design history. Graduated Magna Cum Laude.
+                </p>
+              </div>
+
+              <!-- Node 2 -->
+              <div class="timeline-node">
+                <span class="timeline-dot" style="border-color: var(--accent-cyan); box-shadow: 0 0 10px var(--accent-cyan);"></span>
+                <span class="timeline-period">2023 &bull; Credential ID: AUT-MY-8921</span>
+                <h4 class="timeline-role">Autodesk Certified Professional: Maya 3D</h4>
+                <div class="timeline-org">Autodesk Authorized Certification</div>
+                <p class="timeline-desc">
+                  Demonstrated advanced proficiency in character rigging, skeleton deformers, UV mapping, and Arnold rendering pipeline.
+                </p>
+              </div>
+
+              <!-- Node 3 -->
+              <div class="timeline-node">
+                <span class="timeline-dot" style="border-color: var(--accent-cyan); box-shadow: 0 0 10px var(--accent-cyan);"></span>
+                <span class="timeline-period">2024 &bull; Epic Games</span>
+                <h4 class="timeline-role">Unreal Engine Virtual Production Fellowship</h4>
+                <div class="timeline-org">Epic Games Creator Academy</div>
+                <p class="timeline-desc">
+                  Intensive specialization in real-time camera tracking, LED volume virtual production backdrops, and Niagara particle systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       7. TESTIMONIALS SECTION
+       ======================================================================= -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">// PEER ENDORSEMENTS</span>
+        <h2 class="section-title">What Directors &amp; Clients Say</h2>
+        <p class="section-subtitle">
+          Feedback from Creative Directors and Art Leads who have collaborated with me on high-pressure launches.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="testimonial-card">
+            <div>
+              <div class="quote-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">
+                "Alex is that rare creative talent who understands both the microscopic technical nuances of 3D rigging and the macroscopic rhythm of storytelling. Our launch commercial garnered 1.2M views in 48 hours."
+              </p>
+            </div>
+            <div class="client-author-info">
+              <div class="client-avatar-circle">ML</div>
+              <div>
+                <div class="client-name">Marcus Langford</div>
+                <div class="client-role">Creative Director &bull; Nexus Studios</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="testimonial-card">
+            <div>
+              <div class="quote-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">
+                "The 3D packaging renders Alex built for Aetheria were so photorealistic that our print vendors used them as gold-standard color targets. Reliable, creative, and blisteringly fast turnaround times."
+              </p>
+            </div>
+            <div class="client-author-info">
+              <div class="client-avatar-circle" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">SR</div>
+              <div>
+                <div class="client-name">Sophie Rousseau</div>
+                <div class="client-role">Head of Brand &bull; Aetheria Fragrances</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="testimonial-card">
+            <div>
+              <div class="quote-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">
+                "Finding an artist who can jump seamlessly between After Effects kinetic typography, Maya character rigs, and real-time Unreal Engine 5 is practically impossible. Alex is that unicorn."
+              </p>
+            </div>
+            <div class="client-author-info">
+              <div class="client-avatar-circle" style="background: linear-gradient(135deg, #06b6d4, #6366f1);">DC</div>
+              <div>
+                <div class="client-name">David Chen</div>
+                <div class="client-role">Lead Art Director &bull; Mythos Vanguard</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       8. CONTACT SECTION WITH FORM VALIDATION
+       ======================================================================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">// START A CONVERSATION</span>
+        <h2 class="section-title">Let’s Build Something Extraordinary</h2>
+        <p class="section-subtitle">
+          Currently open to full-time opportunities, senior 3D generalist roles, and select freelance commissions.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Left Column: Direct Contact & Availability -->
+        <div class="col-lg-5 col-12">
+          <div class="contact-info-card d-flex flex-column justify-content-between">
+            <div>
+              <div class="status-badge mb-4">
+                <span class="pulse-dot"></span>
+                <span>Ready for Immediate Onboarding</span>
+              </div>
+
+              <h3 class="h4 text-white mb-3">Direct Contact Channels</h3>
+              <p class="text-secondary mb-4">
+                Feel free to email me directly or schedule an intro call to review project scopes, showreels, or team fit.
+              </p>
+
+              <!-- Method 1: Email -->
+              <div class="contact-method-item">
+                <div class="contact-icon-box">
+                  <i class="bi bi-envelope-at-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-method-label">Direct Email</div>
+                  <a href="mailto:kamblemadhuri810.mk@gmail.com" class="contact-method-val text-decoration-none">kamblemadhuri810.mk@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Method 2: Phone -->
+              <div class="contact-method-item">
+                <div class="contact-icon-box">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-method-label">Phone / WhatsApp</div>
+                  <span class="contact-method-val">+91 96675 30253</span>
+                </div>
+              </div>
+
+              <!-- Method 3: Location -->
+              <div class="contact-method-item">
+                <div class="contact-icon-box">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-method-label">Location &amp; Timezone</div>
+                  <span class="contact-method-val">Dombivali, Mumbai &bull; maharashtra / Remote</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Profiles -->
+            <div>
+              <div class="social-links-grid">
+                <a href="https://artstation.com" target="_blank" class="social-pill-link">
+                  <i class="bi bi-palette text-purple"></i> ArtStation
+                </a>
+                <a href="https://behance.net" target="_blank" class="social-pill-link">
+                  <i class="bi bi-behance text-cyan"></i> Behance
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-pill-link">
+                  <i class="bi bi-linkedin text-purple"></i> LinkedIn
+                </a>
+                <a href="https://vimeo.com" target="_blank" class="social-pill-link">
+                  <i class="bi bi-camera-video text-pink"></i> Vimeo
+                </a>
+                <a href="https://github.com" target="_blank" class="social-pill-link">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Validated Contact Form -->
+        <div class="col-lg-7 col-12">
+          <div class="contact-form-card">
+            <!-- Form Success Banner -->
+            <div id="formSuccessBanner" class="form-success-banner">
+              <i class="bi bi-check-circle-fill text-success fs-1 mb-2 d-block"></i>
+              <h4 class="text-white">Transmission Received!</h4>
+              <p class="text-secondary small mb-3">
+                Thank you for reaching out. Your message has been routed to my primary inbox and I will respond within 24 business hours.
+              </p>
+              <button id="resetFormStateBtn" class="btn-outline-purple btn-sm-pill">
+                <i class="bi bi-pencil-square"></i> Send Another Message
+              </button>
+            </div>
+
+            <!-- Interactive Form -->
+            <form id="contactForm" novalidate>
+              <h3 class="h4 text-white mb-2">Send an Inquiry</h3>
+              <p class="text-muted small mb-4">All fields marked with an asterisk (<span class="text-purple">*</span>) are required.</p>
+
+              <div class="row g-3">
+                <!-- Name -->
+                <div class="col-md-6 col-12">
+                  <label for="contactName" class="form-label">Full Name <span class="req">*</span></label>
+                  <input type="text" class="form-control" id="contactName" placeholder="e.g. Elena Rostova" required>
+                  <div class="invalid-feedback">Please provide your name (minimum 2 characters).</div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6 col-12">
+                  <label for="contactEmail" class="form-label">Email Address <span class="req">*</span></label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="elena@company.com" required>
+                  <div class="invalid-feedback">Please provide a valid email address.</div>
+                </div>
+
+                <!-- Inquiring Role / Service -->
+                <div class="col-md-6 col-12">
+                  <label for="contactRole" class="form-label">Project Type / Inquiring Role <span class="req">*</span></label>
+                  <select class="form-select" id="contactRole" required>
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="fulltime">Full-Time Job Opportunity</option>
+                    <option value="contract">3D Character Rigging &amp; Animation</option>
+                    <option value="motion">Kinetic Motion Graphics / VFX Title</option>
+                    <option value="branding">Brand Identity &amp; 3D Packaging</option>
+                    <option value="consulting">Unreal Engine / Virtual Production</option>
+                    <option value="other">Other Collaboration</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose a relevant category.</div>
+                </div>
+
+                <!-- Budget / Timeline -->
+                <div class="col-md-6 col-12">
+                  <label for="contactBudget" class="form-label">Estimated Timeline / Start Date</label>
+                  <input type="text" class="form-control" id="contactBudget" placeholder="e.g. Immediate, Q1 2027">
+                </div>
+
+                <!-- Subject -->
+                <div class="col-12">
+                  <label for="contactSubject" class="form-label">Subject <span class="req">*</span></label>
+                  <input type="text" class="form-control" id="contactSubject" placeholder="e.g. Senior 3D Animator Role Inquiry" required>
+                  <div class="invalid-feedback">Please provide a subject line.</div>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label for="contactMessage" class="form-label">Project Brief / Message <span class="req">*</span></label>
+                  <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell me about the project goals, deliverables, timeline, or position details..." required></textarea>
+                  <div class="invalid-feedback">Please enter your message (at least 10 characters).</div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                  <button type="submit" id="formSubmitBtn" class="btn-primary-purple w-100 py-3">
+                    <i class="bi bi-send-fill"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       9. MODAL: DYNAMIC PROJECT MEDIA & CASE STUDY LIGHTBOX
+       ======================================================================= -->
+  <div class="modal fade" id="projectDetailsModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <span class="section-badge mb-0" id="modalProjectBadge">🎬 3D Animation</span>
+            <h3 class="modal-title h5 text-white m-0" id="modalProjectTitle">Project Title</h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <!-- Media Viewport (Video player or Zoomable image) -->
+          <div class="modal-media-viewport" id="modalMediaContainer">
+            <!-- Injected by JavaScript -->
+          </div>
+
+          <!-- Metadata Grid -->
+          <div class="modal-meta-grid">
+            <div>
+              <div class="modal-meta-title">Client / Project</div>
+              <div class="modal-meta-val" id="modalProjectClient">Client Name</div>
+            </div>
+            <div>
+              <div class="modal-meta-title">Release Year</div>
+              <div class="modal-meta-val" id="modalProjectYear">2026</div>
+            </div>
+            <div>
+              <div class="modal-meta-title">My Role</div>
+              <div class="modal-meta-val" id="modalProjectRole">Lead Animator</div>
+            </div>
+            <div>
+              <div class="modal-meta-title">Primary Software</div>
+              <div class="modal-meta-val" id="modalProjectTools">Maya, Octane</div>
+            </div>
+          </div>
+
+          <!-- Description & Technical Breakdown -->
+          <div class="row g-4 mt-1">
+            <div class="col-lg-7 col-12">
+              <h4 class="h6 text-purple font-monospace text-uppercase fw-bold mb-2">// Creative Concept &amp; Execution</h4>
+              <p class="text-secondary" id="modalProjectOverview">
+                Detailed project narrative and design challenge breakdown.
+              </p>
+            </div>
+            <div class="col-lg-5 col-12">
+              <h4 class="h6 text-cyan font-monospace text-uppercase fw-bold mb-2">// Key Deliverables &amp; Pipeline</h4>
+              <ul class="text-secondary small ps-3 mb-0" id="modalProjectDetailsList">
+                <!-- Injected by JavaScript -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer border-secondary border-opacity-25">
+          <button type="button" class="btn-outline-purple btn-sm-pill" data-bs-dismiss="modal">Close Preview</button>
+          <a href="#contact" class="btn-primary-purple btn-sm-pill" data-bs-dismiss="modal">
+            <i class="bi bi-chat-quote-fill"></i> Inquire About Similar Work
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       10. MODAL: 2026 SHOWREEL VIDEO PLAYER
+       ======================================================================= -->
+  <div class="modal fade" id="showreelModal" tabindex="-1" aria-labelledby="showreelModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge bg-danger text-uppercase px-2 py-1 font-monospace">4K SHOWREEL</span>
+            <h3 class="modal-title h5 text-white m-0" id="showreelModalLabel">Ranjeet Sardar // 2026 3D &amp; Motion Reel</h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="modal-media-viewport mb-0" style="aspect-ratio: 16 / 9; border: none; border-radius: 0;">
+            <video id="showreelVideoPlayer" class="w-100 h-100" controls poster="assets/images/project-1-mecha.svg">
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-3 bg-dark text-secondary small d-flex justify-content-between flex-wrap gap-2">
+            <span><strong>Reel Breakdown:</strong> 00:00 - Character Rigging | 00:30 - Kinetic Typography | 01:05 - Fluid Dynamics | 01:45 - Unreal Engine 5 Real-Time</span>
+            <span class="text-purple font-monospace">Audio Mastered at -14 LUFS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       11. FOOTER
+       ======================================================================= -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-lg-5 col-12">
+          <a class="navbar-brand mb-2" href="#home">
+            <div class="brand-icon-box">
+              <i class="bi bi-box"></i>
+            </div>
+            <div>
+              <span>Ranjeet Sardar</span>
+              <span class="brand-sub">3D &bull; MOTION &bull; DESIGN</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Senior Graphic Designer and 3D Motion Animator specialized in cinematic rigging, fluid dynamics, and brand systems. Available for remote global contracts and full-time studio roles.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-6">
+          <h4 class="footer-nav-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About &amp; Philosophy</a></li>
+            <li><a href="#skills">Skills &amp; Software</a></li>
+            <li><a href="#projects">Featured Projects</a></li>
+            <li><a href="#resume">Resume Timeline</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Direct -->
+        <div class="col-lg-4 col-6">
+          <h4 class="footer-nav-title">Creative Portals</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://artstation.com" target="_blank"><i class="bi bi-palette me-2 text-purple"></i>ArtStation Profile</a></li>
+            <li><a href="https://behance.net" target="_blank"><i class="bi bi-behance me-2 text-cyan"></i>Behance Portfolio</a></li>
+            <li><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin me-2 text-purple"></i>LinkedIn Network</a></li>
+            <li><a href="https://vimeo.com" target="_blank"><i class="bi bi-camera-video me-2 text-pink"></i>Vimeo Showreels</a></li>
+            <li><a href="assets/docs/Madhuri_Kamble_CV2026.pdf" download><i class="bi bi-file-earmark-pdf me-2 text-danger"></i>Download PDF CV</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div>
+          &copy; 2026 Ranjeet Sardar. All Rights Reserved. Designed with HTML5, CSS3, Bootstrap 5 &amp; JavaScript.
+        </div>
+        <div>
+          <span class="text-purple font-monospace">Crafted with precision &amp; purple photon glow.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- =======================================================================
+       SCRIPTS
+       ======================================================================= -->
+  <!-- Three.js (for Hero 3D interactive mesh) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Bootstrap 5.3.3 Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Portfolio Application Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

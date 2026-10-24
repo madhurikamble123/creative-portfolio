@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kinBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0714"/>
+      <stop offset="50%" stop-color="#150f2e"/>
+      <stop offset="100%" stop-color="#07040d"/>
+    </linearGradient>
+    <linearGradient id="ribbon1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="ribbon2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="60%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#d946ef"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#kinBg)"/>
+
+  <!-- Waveform grid / Audio spectrum lines -->
+  <g opacity="0.2" stroke="#a855f7" stroke-width="1.5">
+    <path d="M50 250 Q 150 120, 250 250 T 450 250 T 650 250 T 800 250" fill="none"/>
+    <path d="M50 270 Q 150 160, 250 270 T 450 270 T 650 270 T 800 270" fill="none"/>
+    <path d="M50 230 Q 150 80, 250 230 T 450 230 T 650 230 T 800 230" fill="none"/>
+  </g>
+
+  <!-- Dynamic 3D Twisted Kinetic Ribbons -->
+  <path d="M-50 380 C 200 480, 280 120, 480 180 C 680 240, 720 80, 850 130 L 850 190 C 700 140, 640 310, 440 250 C 260 190, 180 440, -50 440 Z" fill="url(#ribbon1)" opacity="0.85"/>
+  <path d="M-50 120 C 180 80, 320 380, 520 320 C 720 260, 750 420, 850 390 L 850 340 C 720 380, 680 200, 480 260 C 280 320, 160 30, -50 70 Z" fill="url(#ribbon2)" opacity="0.75"/>
+
+  <!-- Kinetic Typography In Perspective -->
+  <g transform="translate(180, 260) rotate(-6)">
+    <text x="0" y="0" fill="#ffffff" font-family="'Segoe UI', 'Impact', sans-serif" font-size="72" font-weight="900" letter-spacing="4" opacity="0.95">SOLARIS</text>
+    <text x="5" y="4" fill="none" stroke="#a855f7" stroke-width="2" font-family="'Segoe UI', 'Impact', sans-serif" font-size="72" font-weight="900" letter-spacing="4" opacity="0.6">SOLARIS</text>
+    <text x="180" y="45" fill="#38bdf8" font-family="monospace" font-size="16" font-weight="bold" letter-spacing="6">CHRONO SEQUENCE</text>
+  </g>
+
+  <!-- Timecode and Keyframe UI overlay -->
+  <g transform="translate(60, 60)" opacity="0.9">
+    <rect x="0" y="0" width="130" height="28" rx="6" fill="#130e26" stroke="#ec4899" stroke-width="1.2"/>
+    <text x="12" y="18" fill="#f472b6" font-family="monospace" font-size="11" font-weight="bold">▶ MOTION &amp; VFX</text>
+  </g>
+  <g transform="translate(610, 60)" opacity="0.9">
+    <rect x="0" y="0" width="130" height="28" rx="6" fill="#130e26" stroke="#a855f7" stroke-width="1.2"/>
+    <text x="12" y="18" fill="#d8b4fe" font-family="monospace" font-size="11" font-weight="bold">00:02:14:18 REC</text>
+  </g>
+  <text x="50" y="445" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">SOLARIS KINETIC TITLE</text>
+  <text x="50" y="470" fill="#a1a1aa" font-family="'Segoe UI', Roboto, sans-serif" font-size="14">After Effects, Cinema 4D, &amp; Octane Render</text>
+</svg>

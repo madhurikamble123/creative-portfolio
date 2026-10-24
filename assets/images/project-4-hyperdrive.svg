@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="carBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0514"/>
+      <stop offset="50%" stop-color="#140b2b"/>
+      <stop offset="100%" stop-color="#05030a"/>
+    </linearGradient>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="40%" stop-color="#1e1b4b"/>
+      <stop offset="70%" stop-color="#0f0e26"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+    <linearGradient id="lightTrail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#carBg)"/>
+
+  <!-- High-speed light streaks in background -->
+  <line x1="50" y1="210" x2="450" y2="210" stroke="#a855f7" stroke-width="2" opacity="0.4"/>
+  <line x1="0" y1="260" x2="350" y2="260" stroke="#ec4899" stroke-width="1.5" opacity="0.5"/>
+  <line x1="120" y1="310" x2="420" y2="310" stroke="#38bdf8" stroke-width="2" opacity="0.3"/>
+  <line x1="20" y1="360" x2="300" y2="360" stroke="#a855f7" stroke-width="3" opacity="0.4"/>
+
+  <!-- Ground reflection grid -->
+  <line x1="0" y1="410" x2="800" y2="410" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Cyber Concept Vehicle Silhouette -->
+  <!-- Aerodynamic Body -->
+  <path d="M180 340 L280 270 L480 260 L620 300 L680 340 L650 370 L210 370 Z" fill="url(#carBody)" stroke="#a855f7" stroke-width="2.5"/>
+  <!-- Cockpit Canopy Glass -->
+  <path d="M330 270 L400 220 L510 220 L560 270 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M360 265 L415 230 L495 230 L535 265 Z" fill="#38bdf8" opacity="0.25"/>
+
+  <!-- Glowing Rear Thruster / Tail Light -->
+  <path d="M170 330 L220 325 L210 355 L165 350 Z" fill="#ec4899" opacity="0.9"/>
+  <line x1="40" y1="337" x2="170" y2="337" stroke="#ec4899" stroke-width="4" opacity="0.8"/>
+
+  <!-- Front Headlight LED Matrix Strip -->
+  <polygon points="620,300 680,340 660,345 615,310" fill="#38bdf8"/>
+  <line x1="680" y1="340" x2="790" y2="350" stroke="#38bdf8" stroke-width="3" opacity="0.9"/>
+  <line x1="680" y1="340" x2="770" y2="370" stroke="#38bdf8" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Magnetic Hover Wheels / Repulsor Rings -->
+  <!-- Front Ring -->
+  <circle cx="560" cy="370" r="38" fill="#110d24" stroke="#a855f7" stroke-width="4"/>
+  <circle cx="560" cy="370" r="22" fill="#080512" stroke="#38bdf8" stroke-width="2"/>
+  <!-- Rear Ring -->
+  <circle cx="280" cy="370" r="38" fill="#110d24" stroke="#a855f7" stroke-width="4"/>
+  <circle cx="280" cy="370" r="22" fill="#080512" stroke="#38bdf8" stroke-width="2"/>
+
+  <!-- Ground Hover Glow -->
+  <ellipse cx="420" cy="405" rx="240" ry="15" fill="#a855f7" opacity="0.3"/>
+
+  <!-- Tag & Labels -->
+  <g transform="translate(60, 60)" opacity="0.85">
+    <rect x="0" y="0" width="130" height="28" rx="6" fill="#130e26" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="12" y="18" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">● UNREAL ENGINE 5</text>
+  </g>
+  <text x="50" y="445" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">HYPERDRIVE XR CONCEPT</text>
+  <text x="50" y="470" fill="#a1a1aa" font-family="'Segoe UI', Roboto, sans-serif" font-size="14">Hard-Surface Modeling, Real-time Raytracing &amp; Rig</text>
+</svg>
